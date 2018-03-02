@@ -2,7 +2,7 @@
 #include<conio.h>
 int main()
 {
-int n,j,v[100],tmp=0,cnt=0,i,b=0;
+int n,j,v[100],t=0,c=0,i,b=0;
 scanf("%d",&n);
 for(i=0;i<n;i++)
 {
@@ -14,7 +14,7 @@ for(j=i+1;j<n;j++)
 {
 if(v[i]==v[j])
 {
-cnt=cnt+1;
+c=c+1;
 }
 }
 
@@ -25,25 +25,25 @@ for(j=i+1;j<n;j++)
 {
 if(v[i]==v[j])
 {
-tmp=v[j];
+t=v[j];
 v[j]=v[j+1];
-v[j+1]=tmp;
+v[j+1]=t;
 }
 }
 }
-b=cnt;
-for(i=0;i<(n-(cnt-1));i++)
+b=c;
+for(i=0;i<(n-(c-1));i++)
 {
-for(j=i+1;j<(n-cnt);j++)
+for(j=i+1;j<(n-c);j++)
 {
 if(v[i]<v[j])
 {
-tmp=v[i];
+t=v[i];
 v[i]=v[j];
-v[j]=tmp;
+v[j]=t;
 }
 }}
-  for(i=0;i<(n-cnt);i++)
+  for(i=0;i<(n-c);i++)
 {
 printf("%d\t",v[i]);
   }
