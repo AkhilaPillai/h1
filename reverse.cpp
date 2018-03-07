@@ -3,18 +3,18 @@
 using namespace std;
 void main()
 {
-int begin,end,i,j=0,len,temp,count=0;
+int b,e,i,j=0,l,t;
 String s;
 cout<<"Enter string:";
 gets(s);
-len=s.length();
-for(i=0;i<len;i++)
+l=s.length();
+for(i=0;i<l;i++)
 {
-for(begin=j,end=j-1;begin<(i+j)/2;begin++;end--)
+for(b=j,e=j-1;b<(i+j)/2;b++;e--)
 {
-temp=s[begin];
-s[begin]=s[end];
-s[end]=temp;
+t=s[b];
+s[b]=s[e];
+s[e]=t;
 }
 j=i+1;
 }
