@@ -10,7 +10,7 @@ int main()
        cin>>n[i];
    }
 m=n[0];
-for(i=0;i<10;i++)
+for(i=1;i<10;i++)
 {
     if(m<n[i])
     {
