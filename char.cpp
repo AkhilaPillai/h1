@@ -5,16 +5,16 @@ using namespace std;
 
 int main()
 {
-    string s;
-    int i,count=0;
-    getline(cin, s);
-    for(i=0;i<s.length();i++)
+    string str;
+    int i,c=0;
+    getline(cin, str);
+    for(i=0;i<str.length();i++)
     {
-    if(s.at(i)!=' ')
+    if(str.at(i)!=' ')
     {
-        count++;
+        c++;
     }
 }
-cout<<count;
+cout<<c;
    return 0;
 }
